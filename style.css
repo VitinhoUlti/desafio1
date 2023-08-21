@@ -1,0 +1,74 @@
+@charset "UTF-8";
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    height: 15vh;
+    width: 100vw;
+    background-color: gray;
+    color: white;
+    grid-template-areas: 
+    "imagem titulo nada3"
+    ;
+    grid-template-columns: 
+    20% 60% 20%
+    ;
+    text-align: center;
+    align-items: center;
+}
+main{
+    height: 60vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "nada texto nada2"
+    ;
+    grid-template-columns: 
+    20% 60% 20%
+    ;
+}
+#imagem{
+    grid-area: imagem;
+}
+#titulo{
+    grid-area: titulo;
+    width: 60vw;
+    
+}
+#nada3{
+    grid-area: nada3;
+}
+#imagem{
+    background-image: url(imagens/pexels-stas-knop-1198264.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 20vw;
+    background-position: center;
+}
+#nada{
+    grid-area: nada;
+}
+#texto{
+    grid-area: texto;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nada2{
+    grid-area: nada2;
+}
+#flores{
+    width: 30vw;
+    height: 30vh;
+    background-image: url(imagens/pexels-neosiam-707571.jpg);
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/pexels-asad-photo-maldives-1024975.jpg);
+}
